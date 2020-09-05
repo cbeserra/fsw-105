@@ -3,7 +3,7 @@ var shopper = {
     wallet: 50,
     hasMoney: true,
     buy: function() {
-        return this.name + "is buying something";
+        return this.name + "is buying something",
     }, 
-    groceryCart: ["milk","eggs","bacon", "tortillas"]
-}
+    groceryCart: ["milk","eggs","bacon", "tortillas"],
+    console.log(shopper.buy())
