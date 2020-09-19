@@ -1,8 +1,8 @@
-var readline = require("readline-sync");
+const readline = require("readline-sync");
 
-var firstNum = readlineSync.questionInt("please enter your first number: ");
-var secondNum = readlineSync.questionInt("Please enter your second number: ");
-var operation = readlineSync.question("Please enter the operation to perform - add, sub, mul, div: ");
+var firstNum = readline.questionInt("please enter your first number: ");
+var secondNum = readline.questionInt("Please enter your second number: ");
+var operation = readline.question("Please enter the operation to perform - add, sub, mul, div: ");
 
 //Function to Add two Numbers
 function addTwoNumbers(num1, num2){
@@ -12,7 +12,7 @@ function addTwoNumbers(num1, num2){
 //Function to Subtract two Numbers
 function subtractTwoNumbers(num1, num2){
     return "Subtracting Number 1: " + num1 + " and Number 2: " + num2 + "results in: " + (num1 - num2);
-}
+} 
 
 //Function to Multiply two Numbers
 function multiplyTwoNumbers(num1, num2){
