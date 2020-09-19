@@ -6,22 +6,22 @@ var operation = readline.question("Please enter the operation to perform - add, 
 
 //Function to Add two Numbers
 function addTwoNumbers(num1, num2){
-    return "Adding Number 1: " + num1 + "with Number 2: " + num2 + " results in a sum of: " + (num1 + num2);
+    return "Adding Number 1: " + num1 + " with Number 2: " + num2 + " results in the sum of: " + (num1 + num2);
 }
 
 //Function to Subtract two Numbers
 function subtractTwoNumbers(num1, num2){
-    return "Subtracting Number 1: " + num1 + " and Number 2: " + num2 + "results in: " + (num1 - num2);
+    return "Subtracting Number 1: " + num1 + " and Number 2: " + num2 + " results in the answer of: " + (num1 - num2);
 } 
 
 //Function to Multiply two Numbers
 function multiplyTwoNumbers(num1, num2){
-    return "Multiplying Number 1: " + num1 + " and Number 2: " + num2 + "results in: " + (num1 * num2);
+    return "Multiplying Number 1: " + num1 + " and Number 2: " + num2 + " results in the answer of: " + (num1 * num2);
 }
 
 //function to Divide two Numbers
 function divideTwoNumbers(num1, num2){
-    return "Dividing Number 1: " + num1 + " and Number 2: " + num2 + "results in: " + (num1 / num2);
+    return "Dividing Number 1: " + num1 + " and Number 2: " + num2 + " results in the answer of: " + (num1 / num2);
 }
 
 if (operation == "add")
