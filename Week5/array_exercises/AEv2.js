@@ -1,5 +1,5 @@
 //Section A
-//1.
+console.log ("A-1")
 
 function fiveAndGreaterOnly(arr) {
   var greaterNum = arr.filter(function(num) {
@@ -10,8 +10,7 @@ function fiveAndGreaterOnly(arr) {
 console.log(fiveAndGreaterOnly([3, 6, 8, 2])); /// [6, 8]
 
 
-//2.
-
+console.log ("A-2")
 function evensOnly(arr) {
   const evenNum = arr.filter(function(num){
      return num % 2 === 0
@@ -21,28 +20,9 @@ function evensOnly(arr) {
 console.log(evensOnly([3, 6, 8, 2])); /// [6, 8, 2]
 
 
-//Extra Credit
-
-function ofAge(arr) {
-    var oldEnough = arr.filter(function(value) {
-      if (value.age < 18) {
-          return value;
-}
-});
-    return oldEnough;
-}
-console.log(ofAge([
-    { name: "Angelina Jolie", age: 80 },
-    { name: "Eric Jones", age: 2 },
-    { name: "Paris Hilton", age: 5 },
-    { name: "Kayne West", age: 16 },
-    { name: "Bob Ziroll", age: 100 }
-]));
-
 //Section B
 
-//1.
-
+console.log ("B-1")
 function doubleNumbers(arr){
   let double = arr.map(i=>i*2);
   return double;
@@ -50,16 +30,14 @@ function doubleNumbers(arr){
 
 console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
 
-//2.
-
+console.log ("B-2")
 function stringItUp(arr){
     let string = arr.map(String);
     return string;
 }
 console.log(stringItUp([2, 5, 100]));
 
-//3.
-
+console.log ("B-3")
 function capitalizeNames(arr){
   let upperCase =arr.map(function(string){
     return string.substr(0,1).toUpperCase() + string.substr(1).toLowerCase();
@@ -71,20 +49,18 @@ console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 
 //Section C
 
-//1.
-
+console.log ("C-1")
 function total(arr) {
-const result = arr.reduce(function(finaladdition, num) {
-		return finalAddition =  +num;
+const result = arr.reduce(function(finalAddition, num) {
+		return finalAddition = finalAddition + num;
 		return finalAddition;
 });
 return result;
 }
 
-console.log(total([1,2,3]));
+console.log(total([1,2,3])); // 6
 
-//2.
-
+console.log ("C-2")
 function stringConcat(arr) {
     return arr.reduce(function(final, num) {
         return final + num.toString();
@@ -92,14 +68,12 @@ function stringConcat(arr) {
 }
 console.log(stringConcat([1,2,3])); // "123"
 
-//3.
-
+console.log ("C-3")
 function totalVotes(array) {
     return array.reduce(function(count, voter) {
         return count + voter.voted;
     }, 0);
 }
-
 var voters = [
     {name:'Bob' , age: 30, voted: true},
     {name:'Jake' , age: 32, voted: true},
@@ -118,19 +92,16 @@ console.log(totalVotes(voters)); // 7
 
 //Section D
 
-//1.
-
+console.log ("D-1")
 function leastToGreatest(arr) {
   const result = arr.sort(function (a,b){
 	return a-b;
 });	
 	return result;
 }
-
 console.log(leastToGreatest([1, 3, 5, 2, 90, 20])); // [1, 2, 3, 5, 20, 90] 
 
-//2.
-
+console.log ("D-2")
 function greatestToLeast(arr) {
  const result = arr.sort(function (a,b){
 	return b-a;
@@ -139,13 +110,11 @@ function greatestToLeast(arr) {
 }
 console.log(greatestToLeast([1, 3, 5, 2, 90, 20])); // [90, 20, 5, 3, 2, 1] 
 
-//3.
-
+console.log ("D-3")
 function lengthSort(arr) {
   const result = arr.sort(function (a,b){
       return a.length - b.length;
   });
   return result;
 }
-
 console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"])); // ["by", "dog", "wolf", "eaten", "family"] 
